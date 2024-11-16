@@ -10,6 +10,12 @@ body{
     scroll-behavior: smooth;
 }
 /* Top, sec-1 */
+#sec-1{
+    background-image: url(../pics/top-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .top-bg{
     height: 99.9vh;
     overflow: hidden;

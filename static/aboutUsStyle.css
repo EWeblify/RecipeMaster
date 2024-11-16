@@ -1,126 +1,150 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
 }
+
 /* Sec1 */
-#about-top{
+#sec1 {
+    background-image: url(../pics/aboutus.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-top {
     height: 99.9vh;
     overflow: hidden;
 }
-#about-top img{
+
+#about-top img {
     width: 100%;
     opacity: 1;
 }
+
 #about-top h1 {
-    position: absolute; 
-    top: 200px; 
-    left: 50%; 
+    position: absolute;
+    top: 200px;
+    left: 50%;
     transform: translateX(-50%);
-    color: black; 
-    font-size: 4.3em; 
+    color: black;
+    font-size: 4.3em;
     z-index: 100;
     width: 70%;
     text-align: center;
     text-shadow: 0 5px 10px white;
 }
+
 #about-top P {
-    position: absolute; 
-    top: 300px; 
-    left: 50%; 
+    position: absolute;
+    top: 300px;
+    left: 50%;
     transform: translateX(-50%);
-    color: #f5f5f5; 
-    font-size: 2em; 
-    text-shadow: 2px 5px 10px rgba(0, 0, 0, 8); 
+    color: #f5f5f5;
+    font-size: 2em;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 8);
     z-index: 10;
     width: 59%;
     text-align: center;
     text-align: justify;
 }
+
 /* sec2 */
-#sec2{
+#sec2 {
     display: flex;
 }
-.about-details{
+
+.about-details {
     display: inline-block;
     width: 61%;
     height: 800px;
     padding: 30px;
     margin-top: 70px;
 }
-.about-details h1{
+
+.about-details h1 {
     margin-left: 70px;
     text-align: justify;
     font-size: 30px;
 }
-.about-details p{
+
+.about-details p {
     margin: 20px;
     margin-left: 70px;
     text-align: center;
     text-align: justify;
     font-size: 20px;
 }
-.about-details-right{
+
+.about-details-right {
     padding: 150px;
 }
-.about-details-right img{
+
+.about-details-right img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
+
 .about-details-right h1,
-.about-details-right p{
+.about-details-right p {
     line-height: 1.8;
     text-align: center;
 }
 
 /* sec3 */
-#sec3 .about-details{
+#sec3 .about-details {
     height: 550px;
 }
 
 /* sec4 */
-#sec4{
+#sec4 {
     display: flex;
     margin-top: 100px;
 }
-#about-employee{
+
+#about-employee {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
-#about-employee img{
+
+#about-employee img {
     width: 200px;
     border-radius: 50%;
 }
-.employee{
+
+.employee {
     text-align: center;
 }
 
 /* sec5 */
-#about-text{
+#about-text {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#about-text p a{
+#about-text p a {
     line-height: 2;
     font-size: 18px;
     color: rgb(37, 37, 172);
 }
-#about-text p{
+
+#about-text p {
     margin-left: 50px;
     line-height: 2;
     font-size: 18px;
-    color:rgb(117, 117, 117);
+    color: rgb(117, 117, 117);
 }
-#about-text h1{
+
+#about-text h1 {
     line-height: 2;
     margin-left: 50px;
     font-size: 30px;

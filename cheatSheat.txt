@@ -1,0 +1,11 @@
+touch .gitignore
+git config --global user.name EWblify
+git config --global user.email "your_email@gmail.com"
+git init
+git add .
+git commit -m "initial commit"
+git status  (=> Just to see the work)
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+tail <path to id_rsa.pub> (=> add this key to your github account)
+git remote add origin <ssh url.git>
+git push origin master

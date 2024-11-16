@@ -1,0 +1,478 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body{
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+/* Top, sec-1 */
+.top-bg{
+    height: 99.9vh;
+    overflow: hidden;
+}
+.top-bg img{
+    opacity: 0.9;
+    width: 100%;
+}
+.top-bg h1 {
+    position: absolute; 
+    top: 200px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white; 
+    font-size: 3.5em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
+    z-index: 100;
+    width: 70%;
+    text-align: center;
+    animation-name: top-text-anime;
+    animation-duration: 2s;
+}
+@keyframes top-text-anime {
+    0% {
+        top: -10px; /* Start above the viewport */
+        opacity: 0;  /* Initially invisible */
+    }
+    100% {
+        top: 200px; /* Final position */
+        opacity: 1;  /* Fade out at the bottom */
+    }
+}
+.top-bg P {
+    position: absolute; 
+    top: 350px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: #f5f5f5; 
+    font-size: 1.3em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 8); 
+    z-index: 10;
+    width: 70%;
+    text-align: center;
+}
+.top-search {
+    position: absolute; 
+    top: 400px; 
+    left: 47%; 
+    transform: translateX(-50%); 
+    font-size: 1.1em;
+    padding: 10px;
+    width: 500px; 
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #f5f5f5; 
+    outline: none;
+    animation-name: search-anime;
+    animation-duration: 2s;
+}
+@keyframes search-anime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.top-search-button{
+    position: absolute; 
+    top: 400px; 
+    left: 67%;
+    font-size: 1.1em;
+    height: 80px;
+    width: 130px;
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgb(255, 75, 75); 
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    animation-name: search-anime;
+    animation-duration: 2s;
+}
+.top-search-button:hover{
+    background-color: red;
+}
+.top-five {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.box {
+    position: relative;
+    bottom: 120px;
+    background-color: #ffffff;
+    width: 230px;
+    height: 190px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 10px;
+    z-index: 100;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 10px;
+    transition: all 0.5s;
+    color: rgb(53, 53, 53);
+}
+
+.box p{
+    margin-top: 10px;
+}
+
+.box img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box:hover{
+    background-color: rgb(255, 92, 92);
+    color: white;
+}
+
+/* sec-2 */
+#sec-2 p:first-child{
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(63, 63, 63);
+    margin-top: 70px;
+}
+#sec-2 p{
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: rgb(105, 105, 105);
+}
+
+/* sec-3 */
+#sec-3{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#sec-3 .readmore-box{
+    padding: 15px;
+    width: 350px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+#sec-3 .readmore-box:hover{
+    background-color: rgb(255, 92, 92);
+    color: white;
+}
+#sec-3 img{
+    width: 80px;
+    border-radius: 50%;
+    filter: invert(8%);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#sec-3 p:nth-child(3){
+    margin-top: 30px;
+    font-size: 18px;
+}
+#readmore-button{
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+    padding: 8px;
+    border-radius: 2px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* sec-4 */
+#sec-4{
+    margin-top: 130px;
+    margin-bottom: 90px;
+}
+#sec-4 p:first-child{
+    font-size: 2.5em;
+    color: rgb(63, 63, 63);
+}
+#sec-4 p{
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(105, 105, 105);
+    line-height: 2.1;
+}
+/* sec-5 */
+#sec-5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#sec-5 .recipe-box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.recipe-box p:nth-child(2) {
+    position: relative;
+    bottom: 40px; /* Start from the bottom */
+    left: 50%;
+    transform: translateX(-50%) translateY(100%); /* Move it offscreen (below the box) initially */
+    color: white;
+    background-color: rgb(255, 75, 75);
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0; /* Hide the element initially */
+    transition: all 0.4s ease-in-out; /* Smooth transition for opacity and position */
+    z-index: 10; /* Ensure it's on top of other content */
+}
+.recipe-box:hover p:nth-child(2) {
+    opacity: 1; /* Make it visible */
+    transform: translateX(-50%) translateY(0); /* Slide it up into view */
+}
+#sec-5 .recipe-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    padding-bottom: 100px;
+}
+.recipe-box img{
+    width: 400px;
+}
+#recipe-box-text span{
+    margin-right: 4px;
+    margin-left: 4px;
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+}
+#recipe-box-text span:nth-child(1){
+    background-color: rgb(27, 117, 27);
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 3px;
+}
+#recipe-box-text span:nth-child(5){
+    color: red;
+}
+#recipe-box-text span:nth-child(3),
+#recipe-box-text span:nth-child(6){
+    color: rgb(170, 170, 170);
+}
+#recipe-box-text p{
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(58, 58, 58);
+}
+#recipe-box-text hr{
+    width: 360px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+#recipe-box-text span:nth-child(10){
+    float: left;
+    color: red;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+/* Heart button styling */
+.favorite-btn {
+    display: inline-block; /* Ensures the div only wraps around the heart icon */
+    cursor: pointer;
+    font-size: 24px; /* Adjust the size of the heart icon */
+    margin-left: 220px;
+    margin-top: 5px;
+}
+
+.favorite-btn i {
+    color: #ccc; /* Default color for unfavorited state */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.favorited i {
+    color: red; /* Red color for favorited state */
+}
+/* sec-6 */
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
+    position: relative;
+    display: flex;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between; /* Space between the boxes */
+    transition: transform 0.5s ease;
+    will-change: transform;
+    gap: 100px;
+}
+
+.slide {
+    width: 400px;  /* Fixed width for each slide */
+    height: 300px; /* Fixed height for each slide */
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    user-select: none;
+    cursor: grab;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.slide:active {
+    cursor: grabbing;
+}
+
+.slide img{
+    width: 50px;
+    border-radius: 50%;
+}
+.slide-id{
+    display: flex;
+    align-items: center;
+}
+.slide h3{
+    margin-left: 20px;
+}
+.slide p{
+    line-height: 1.5;
+    margin-left: 70px;
+    font-size: 16px;
+    color: rgb(105, 105, 105);
+}
+.star {
+    font-size: 40px; /* Size of stars */
+    font-size: 23px;
+    color: goldenrod; /* Default color */
+    cursor: pointer; /* Pointer on hover */
+    transition: color 0.2s; /* Transition effect */
+}
+.rating{
+    margin-left: 68px;
+    line-height: 1;
+}
+.slide p:nth-child(4){
+    text-align: center;
+    margin-top: 50px;
+    margin: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 1320px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .top-bg{
+        position: relative;
+        height: 100%;
+        overflow: visible;
+    }
+    .top-bg h1{
+        font-size: 30px;
+        width: 50%;
+        top: 170px;
+    }
+    .top-bg p{
+        font-size: 18px;
+        top: 290px;
+    }
+    @keyframes top-text-anime {
+        0% {
+            top: -10px; /* Start above the viewport */
+            opacity: 0;  /* Initially invisible */
+        }
+        100% {
+            top: 170px; /* Final position */
+            opacity: 1;  /* Fade out at the bottom */
+        }
+    }
+    #search{
+        display: flex;
+    }
+    .top-search{
+        top: 370px;
+    }
+    .top-search-button{
+        top: 370px;
+    }
+    .top-five{
+        /* bottom: 300px; */
+        background-color: white;
+    }
+    .box{
+        margin: 1px;
+        width: 140px;
+    }
+    #sec-2 {
+        padding-left: 30px;  /* Reduce padding */
+        padding-right: 30px; /* Reduce padding */
+        margin: 100px;
+    }
+    #sec-3 {
+        padding-left: 30px;  /* Reduce padding */
+        padding-right: 30px; /* Reduce padding */
+        margin-top: 1px;
+        display: flex;
+        justify-content: center;
+    }
+    .readmore-box{
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 821px) {
+    .top-bg h1{
+        top: 120px;
+        width: 70%;
+    }   
+    .top-bg p{
+        top: 220px;
+    }
+    @keyframes top-text-anime {
+        0% {
+            top: -10px; /* Start above the viewport */
+            opacity: 0;  /* Initially invisible */
+        }
+        100% {
+            top: 120px; /* Final position */
+            opacity: 1;  /* Fade out at the bottom */
+        }
+    }
+    .top-search{
+        top: 280px;
+    }
+    .top-search-button{
+        top: 280px;
+    }
+}

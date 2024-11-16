@@ -1,0 +1,62 @@
+/* Nav */
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+    background-color: white;
+}
+#header ul {
+    box-shadow: rgb(0, 0, 0.2) 0px 2px 5px;
+    display: flex;              /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items across the nav */
+    align-items: center;        /* Align items vertically */
+    list-style-type: none;      /* Remove bullet points */
+    padding: 24px;
+}
+
+#header li:first-child {
+    margin-right: auto;         /* Push the first item to the left */
+}
+
+#header li {
+    margin-left: 20px;          /* Add spacing between the right-side items */
+}
+#header ul li a{
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    margin: 10px;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+#header ul li a:hover{
+    color: red;
+}
+#header ul li a:focus{
+    color: red;
+}
+#header ul li:nth-child(7) a:hover,
+#header ul li:nth-child(7) a:focus {
+    color: grey;
+    outline: none; 
+}
+#header ul li:first-child a{
+    font-weight: bold;
+}
+#recipe{
+    color: black;
+}
+#master{
+    color: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 1320px){
+    #header ul li a{
+        font-size: 15px;
+    }
+}

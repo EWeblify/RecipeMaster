@@ -1,0 +1,160 @@
+/* Top text */
+h1 {
+    font-size: 50px;
+    margin: 60px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    animation-name: anime-h1;
+    animation-duration: 2s;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ff6347;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+h1:hover::after {
+    width: 100%;
+}
+
+@keyframes anime-h1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* box section */
+#box-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box-sec .recipe-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.recipe-box p:nth-child(2) {
+    position: relative;
+    bottom: 40px;
+    /* Start from the bottom */
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    /* Move it offscreen (below the box) initially */
+    color: white;
+    background-color: rgb(255, 75, 75);
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0;
+    /* Hide the element initially */
+    transition: all 0.4s ease-in-out;
+    /* Smooth transition for opacity and position */
+    z-index: 10;
+    /* Ensure it's on top of other content */
+}
+
+.recipe-box:hover p:nth-child(2) {
+    opacity: 1;
+    /* Make it visible */
+    transform: translateX(-50%) translateY(0);
+    /* Slide it up into view */
+}
+
+#sec-5 .recipe-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    padding-bottom: 100px;
+}
+
+.recipe-box img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#recipe-box-text span {
+    margin-right: 4px;
+    margin-left: 4px;
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+}
+
+#recipe-box-text span:nth-child(1) {
+    background-color: rgb(27, 117, 27);
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+#recipe-box-text span:nth-child(5) {
+    color: red;
+}
+
+#recipe-box-text span:nth-child(3),
+#recipe-box-text span:nth-child(6) {
+    color: rgb(170, 170, 170);
+}
+
+#recipe-box-text p {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(58, 58, 58);
+}
+
+#recipe-box-text hr {
+    width: 360px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#recipe-box-text span:nth-child(10) {
+    float: left;
+    color: red;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+/* Heart button styling */
+.favorite-btn {
+    display: inline-block;
+    /* Ensures the div only wraps around the heart icon */
+    cursor: pointer;
+    font-size: 24px;
+    /* Adjust the size of the heart icon */
+    margin-left: 220px;
+    margin-top: 5px;
+}
+
+.favorite-btn i {
+    color: #ccc;
+    /* Default color for unfavorited state */
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+.favorited i {
+    color: red;
+    /* Red color for favorited state */
+}

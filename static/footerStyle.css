@@ -1,0 +1,128 @@
+#footer{
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+    background-color: white;
+    margin-top: 80px;
+}
+#footer ul {
+    border-top: 1px solid rgb(184, 184, 184);
+    display: flex;              /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items across the nav */
+    align-items: center;        /* Align items vertically */
+    list-style-type: none;      /* Remove bullet points */
+    padding: 30px;
+}
+#footer li:first-child {
+    margin-right: auto;         /* Push the first item to the left */
+}
+
+#footer li {
+    margin-left: 50px;          /* Add spacing between the right-side items */
+}
+#footer-ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+#footer-recipe{
+    color: black;
+}
+#footer-master{
+    color: red;
+}
+#footer hr{
+    width: 1100px;
+    background-color: rgb(230, 230, 230);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 1px;
+    border: none;
+}
+#footer p{
+    color: rgb(105, 105, 105);
+    margin-left: 30px;
+    font-size: 18px;
+}
+#footer-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#footer-details #phone-no{
+    color: rgb(105, 105, 105);
+    margin-left: 300px;
+    transition: all 0.1s;
+}
+#footer-details #phone-no:hover{
+    color: red;
+    background-color: white;
+}
+#footer-links i{
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #e9e9e9;
+    color: rgb(143, 143, 143);
+    transition: all 0.5s;
+}
+#footer-links i:nth-child(1){
+    padding: 19px;
+    text-align: center;
+}
+#footer-details i:hover{
+    background-color: red;
+    color: white;
+}
+#footer-links{
+    margin-left: 20px;
+}
+#footer-links a{
+    text-decoration: none;
+}
+.footer-text{
+    margin-left: 50px;
+}
+
+/* responsive */
+@media (max-width: 1320px) {
+    #footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #footer ul li a{
+        font-size: 18px;
+    }
+    #footer-details {
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center items */
+    }
+
+    #footer-details #phone-no {
+        margin: 5px 0; /* Smaller margin */
+    }
+
+    #footer-links {
+        margin: 0; /* Reset margin */
+    }
+
+    #footer-links i {
+        padding: 8px; /* Reduce padding on smaller screens */
+    }
+
+    .footer-text {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+    #phone-no{
+        font-size: 21px;
+    }
+    #footer-details p{
+        font-size: 25px;
+        text-align: center;
+    }
+}

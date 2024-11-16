@@ -1,0 +1,62 @@
+/* Ensure this is present in exploreStyle.css or favouriteStyle.css */
+#box-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipe-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.recipe-box img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#recipe-box-text span {
+    margin-right: 4px;
+    margin-left: 4px;
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+}
+
+#recipe-box-text span:nth-child(1) {
+    background-color: rgb(27, 117, 27);
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+#recipe-box-text span:nth-child(5) {
+    color: red;
+}
+
+#recipe-box-text span:nth-child(3),
+#recipe-box-text span:nth-child(6) {
+    color: rgb(170, 170, 170);
+}
+
+#recipe-box-text p {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(58, 58, 58);
+}
+
+#recipe-box-text hr {
+    width: 360px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
